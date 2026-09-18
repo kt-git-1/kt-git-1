@@ -6,6 +6,13 @@
 
 iOSアプリの画面からAPI・データベースまで、使いやすさとデータの整合性を考えながら設計・実装しています。
 
+## 作品一覧
+
+| プロジェクト | 内容・実装の見どころ | 確認できるもの |
+| --- | --- | --- |
+| **お薬見守り** | 服薬状況を家族で共有するiOSアプリ。画面・API・DBの設計、アクセス権限、記録と在庫の整合性 | [サービス紹介](https://www.okusuri-mimamori.com/) / [設計・画面](https://github.com/kt-git-1/kt-git-1/blob/main/projects/med-manager.md) / [App Store](https://apps.apple.com/jp/app/id6787427428)（ソース非公開） |
+| **analyze-fastq-app** | Pythonで解析ツールを連携。途中再開・並列処理・データ品質確認・レポート生成 | [設計の解説](https://github.com/kt-git-1/kt-git-1/blob/main/projects/analyze-fastq.md) / [公開コード](https://github.com/kt-git-1/analyze-fastq-app) / [テスト](https://github.com/kt-git-1/analyze-fastq-app/tree/main/tests) |
+
 ## 代表作 — お薬見守り
 
 **「今日の薬は飲めたかな？」「薬はまだ足りるかな？」を、家族で確認できるアプリです。**
@@ -59,8 +66,8 @@ Python / NumPy / pandas / pytest / 外部解析ツール連携
 
 | 領域 | 技術 | 取り組み |
 | --- | --- | --- |
-| モバイル | Swift / SwiftUI | お薬見守り iOS |
-| API・Web | TypeScript / Next.js / React | API・Web |
-| データ設計 | PostgreSQL / Prisma / Supabase | DBスキーマ |
+| モバイル | Swift / SwiftUI | [薬を飲む人・見守る家族それぞれの画面](https://github.com/kt-git-1/kt-git-1/blob/main/projects/med-manager.md#画面) |
+| API・Web | TypeScript / Next.js / React | [役割と対象者に応じたアクセス制御](https://github.com/kt-git-1/kt-git-1/blob/main/projects/med-manager.md#利用者に合わせた役割と操作) |
+| データ設計 | PostgreSQL / Prisma / Supabase | [服薬記録の取消と残薬の復元](https://github.com/kt-git-1/kt-git-1/blob/main/projects/med-manager.md#服薬記録と残薬の整合性) |
 | データ処理・解析 | Python / NumPy / pandas | [解析パイプライン](https://github.com/kt-git-1/analyze-fastq-app) |
-| テスト | Vitest / Playwright / XCTest / GitHub Actions | APIテスト |
+| テスト | Vitest / Playwright / XCTest / pytest / GitHub Actions | [アプリ・APIの品質確認](https://github.com/kt-git-1/kt-git-1/blob/main/projects/med-manager.md#品質確認) / [Pythonの公開テスト](https://github.com/kt-git-1/analyze-fastq-app/tree/main/tests) |
