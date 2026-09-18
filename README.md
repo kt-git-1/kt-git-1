@@ -16,7 +16,7 @@ iOSアプリの画面からAPI・データベースまで、使いやすさと�
 SwiftUI / TypeScript / Next.js / Prisma / PostgreSQL / Supabase
 
 <p>
-  <a href="https://med-manager-v3.vercel.app"><strong>サービス紹介 →</strong></a>&nbsp; · &nbsp;
+  <a href="https://www.okusuri-mimamori.com/"><strong>サービス紹介 →</strong></a>&nbsp; · &nbsp;
   <a href="https://github.com/kt-git-1/kt-git-1/blob/main/projects/med-manager.md">設計と実装の見どころ</a>&nbsp; · &nbsp;
   <a href="https://apps.apple.com/jp/app/id6787427428">App Store</a>
 </p>
