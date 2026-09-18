@@ -11,17 +11,17 @@
 SwiftUI / TypeScript / Next.js / Prisma / PostgreSQL / Supabase
 
 <p>
-  <a href="https://github.com/kt-git-1/med-manager_v3"><strong>コード・プロジェクト紹介 →</strong></a>&nbsp; · &nbsp;
-  <a href="https://github.com/kt-git-1/med-manager_v3/blob/main/docs/portfolio.md">設計と実装の見どころ</a>&nbsp; · &nbsp;
+  <a href="https://med-manager-v3.vercel.app"><strong>サービス紹介 →</strong></a>&nbsp; · &nbsp;
+  <a href="https://github.com/kt-git-1/kt-git-1/blob/main/projects/med-manager.md">設計と実装の見どころ</a>&nbsp; · &nbsp;
   <a href="https://apps.apple.com/jp/app/id6787427428">App Store</a>
 </p>
 
 <table>
   <tr><th>本人の服薬記録</th><th>家族の見守り</th><th>残薬と補充の確認</th></tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/kt-git-1/med-manager_v3/main/api/public/screenshots/patient-today.png" width="220" alt="本人モードの今日のお薬画面" /></td>
-    <td><img src="https://raw.githubusercontent.com/kt-git-1/med-manager_v3/main/api/public/screenshots/caregiver-today.png" width="220" alt="家族モードの服薬状況画面" /></td>
-    <td><img src="https://raw.githubusercontent.com/kt-git-1/med-manager_v3/main/api/public/screenshots/caregiver-inventory.png" width="220" alt="家族モードの残薬管理画面" /></td>
+    <td><img src="https://raw.githubusercontent.com/kt-git-1/kt-git-1/main/assets/med-manager/patient-today.png" width="220" alt="本人モードの今日のお薬画面" /></td>
+    <td><img src="https://raw.githubusercontent.com/kt-git-1/kt-git-1/main/assets/med-manager/caregiver-today.png" width="220" alt="家族モードの服薬状況画面" /></td>
+    <td><img src="https://raw.githubusercontent.com/kt-git-1/kt-git-1/main/assets/med-manager/caregiver-inventory.png" width="220" alt="家族モードの残薬管理画面" /></td>
   </tr>
 </table>
 
@@ -34,18 +34,20 @@ SwiftUI / TypeScript / Next.js / Prisma / PostgreSQL / Supabase
 - **プライバシーへの配慮**：利用状況の分析に同意管理を設ける。
 - **品質確認**：APIの単体・結合・契約・E2Eテストと、iOSのテストを用意する。
 
+ソースコード本体は非公開です。公開資料では、画面と設計上の工夫を紹介しています。
+
 ## その他の取り組み
 
 | プロジェクト | 内容 | 技術 |
 | --- | --- | --- |
 | [nurse-scheduling](https://github.com/kt-git-1/nurse-scheduling) | 希望休や勤務条件を制約として扱う、看護師のシフト作成の試作 | Python / OR-Tools / pandas / openpyxl |
 
-## 使用技術と実装例
+## 使用技術
 
-| 領域 | 技術 | 実装例 |
+| 領域 | 技術 | 取り組み |
 | --- | --- | --- |
-| モバイル | Swift / SwiftUI | [お薬見守り iOS](https://github.com/kt-git-1/med-manager_v3/tree/main/ios/MedicationApp) |
-| API・Web | TypeScript / Next.js / React | [API・Web](https://github.com/kt-git-1/med-manager_v3/tree/main/api) |
-| データ設計 | PostgreSQL / Prisma / Supabase | [DBスキーマ](https://github.com/kt-git-1/med-manager_v3/blob/main/api/prisma/schema.prisma) |
+| モバイル | Swift / SwiftUI | お薬見守り iOS |
+| API・Web | TypeScript / Next.js / React | API・Web |
+| データ設計 | PostgreSQL / Prisma / Supabase | DBスキーマ |
 | 業務の自動化 | Python / OR-Tools | [シフト作成](https://github.com/kt-git-1/nurse-scheduling) |
-| テスト | Vitest / Playwright / XCTest / GitHub Actions | [APIテスト](https://github.com/kt-git-1/med-manager_v3/tree/main/api/tests) |
+| テスト | Vitest / Playwright / XCTest / GitHub Actions | APIテスト |
