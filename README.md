@@ -2,11 +2,16 @@
 
 **日々の困りごとを、使えるアプリケーションに。**
 
-本人と家族のための服薬管理アプリ「お薬見守り」を個人開発しています。iOSの画面からAPI・データベースまで、利用者の操作と業務ルールをつなぐ設計・実装に取り組んでいます。
+毎日薬を飲む人と、その服薬を見守る家族をつなぐアプリ「お薬見守り」を個人開発しています。薬を飲む人がスマートフォンで「飲んだ」と記録すると、離れて暮らす家族も服薬状況を確認できます。
+
+iOSアプリの画面からAPI・データベースまで、使いやすさとデータの整合性を考えながら設計・実装しています。
 
 ## 代表作 — お薬見守り
 
-**本人は今日のお薬を確認して記録。家族は服薬状況と残薬を確認。**
+**「今日の薬は飲めたかな？」「薬はまだ足りるかな？」を、家族で確認できるアプリです。**
+
+- **薬を飲む人**：今日飲む薬と時間を確認し、飲んだら記録します。
+- **見守る家族**：薬や飲む時間を登録し、服薬状況と薬の残りの量を確認します。
 
 SwiftUI / TypeScript / Next.js / Prisma / PostgreSQL / Supabase
 
@@ -17,9 +22,9 @@ SwiftUI / TypeScript / Next.js / Prisma / PostgreSQL / Supabase
 </p>
 
 <table>
-  <tr><th>本人の服薬記録</th><th>家族の見守り</th><th>残薬と補充の確認</th></tr>
+  <tr><th>薬を飲む人の画面</th><th>見守る家族の画面</th><th>薬の残りの量を確認</th></tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/kt-git-1/kt-git-1/main/assets/med-manager/patient-today.png" width="220" alt="本人モードの今日のお薬画面" /></td>
+    <td><img src="https://raw.githubusercontent.com/kt-git-1/kt-git-1/main/assets/med-manager/patient-today.png" width="220" alt="薬を飲む人が今日の薬を確認して記録する画面" /></td>
     <td><img src="https://raw.githubusercontent.com/kt-git-1/kt-git-1/main/assets/med-manager/caregiver-today.png" width="220" alt="家族モードの服薬状況画面" /></td>
     <td><img src="https://raw.githubusercontent.com/kt-git-1/kt-git-1/main/assets/med-manager/caregiver-inventory.png" width="220" alt="家族モードの残薬管理画面" /></td>
   </tr>
@@ -29,7 +34,7 @@ SwiftUI / TypeScript / Next.js / Prisma / PostgreSQL / Supabase
 
 ### このプロジェクトで取り組んでいること
 
-- **利用者に合わせた設計**：本人と家族の画面・操作・アクセス権限を分ける。
+- **利用者に合わせた設計**：薬を飲む人と見守る家族、それぞれの役割に合わせて画面・操作・アクセス権限を分ける。
 - **データの整合性**：服薬記録の取消と残薬の復元をトランザクションで扱う。
 - **プライバシーへの配慮**：利用状況の分析に同意管理を設ける。
 - **品質確認**：APIの単体・結合・契約・E2Eテストと、iOSのテストを用意する。
