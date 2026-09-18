@@ -41,6 +41,20 @@ SwiftUI / TypeScript / Next.js / Prisma / PostgreSQL / Supabase
 
 ソースコード本体は非公開です。公開資料では、画面と設計上の工夫を紹介しています。
 
+## Pythonでのデータ処理・自動化 — analyze-fastq-app
+
+**DNAの配列データを取得し、複数の解析ツールを順番に実行して、品質確認とレポート作成までつなぐパイプラインです。** 馬ゲノム解析を主に想定しています。
+
+専門的な解析手順をPythonでつなぎ、繰り返し実行できる処理として実装しています。
+
+- **処理の自動化**：データ取得・前処理・解析・品質確認・PDF/HTMLレポート出力を連携。
+- **再実行と並列処理**：完了済み処理のスキップ、既存の中間結果の再利用、サンプル単位の並列実行。
+- **データ品質と検証**：欠損率などに基づくフィルタリング、PCA/MDSによる可視化、失敗時や再開時の動作を確認するテスト。
+
+Python / NumPy / pandas / pytest / 外部解析ツール連携
+
+[コード・実行手順](https://github.com/kt-git-1/analyze-fastq-app) · [設計と実装の見どころ](https://github.com/kt-git-1/kt-git-1/blob/main/projects/analyze-fastq.md) · [テスト](https://github.com/kt-git-1/analyze-fastq-app/tree/main/tests)
+
 ## その他の取り組み
 
 | プロジェクト | 内容 | 技術 |
@@ -54,5 +68,6 @@ SwiftUI / TypeScript / Next.js / Prisma / PostgreSQL / Supabase
 | モバイル | Swift / SwiftUI | お薬見守り iOS |
 | API・Web | TypeScript / Next.js / React | API・Web |
 | データ設計 | PostgreSQL / Prisma / Supabase | DBスキーマ |
+| データ処理・解析 | Python / NumPy / pandas | [解析パイプライン](https://github.com/kt-git-1/analyze-fastq-app) |
 | 業務の自動化 | Python / OR-Tools | [シフト作成](https://github.com/kt-git-1/nurse-scheduling) |
 | テスト | Vitest / Playwright / XCTest / GitHub Actions | APIテスト |
