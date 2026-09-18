@@ -55,12 +55,6 @@ Python / NumPy / pandas / pytest / 外部解析ツール連携
 
 [コード・実行手順](https://github.com/kt-git-1/analyze-fastq-app) · [設計と実装の見どころ](https://github.com/kt-git-1/kt-git-1/blob/main/projects/analyze-fastq.md) · [テスト](https://github.com/kt-git-1/analyze-fastq-app/tree/main/tests)
 
-## その他の取り組み
-
-| プロジェクト | 内容 | 技術 |
-| --- | --- | --- |
-| [nurse-scheduling](https://github.com/kt-git-1/nurse-scheduling) | 希望休や勤務条件を制約として扱う、看護師のシフト作成の試作 | Python / OR-Tools / pandas / openpyxl |
-
 ## 使用技術
 
 | 領域 | 技術 | 取り組み |
@@ -69,5 +63,4 @@ Python / NumPy / pandas / pytest / 外部解析ツール連携
 | API・Web | TypeScript / Next.js / React | API・Web |
 | データ設計 | PostgreSQL / Prisma / Supabase | DBスキーマ |
 | データ処理・解析 | Python / NumPy / pandas | [解析パイプライン](https://github.com/kt-git-1/analyze-fastq-app) |
-| 業務の自動化 | Python / OR-Tools | [シフト作成](https://github.com/kt-git-1/nurse-scheduling) |
 | テスト | Vitest / Playwright / XCTest / GitHub Actions | APIテスト |
